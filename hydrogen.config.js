@@ -6,11 +6,10 @@ export default defineConfig({
     defaultLanguageCode: 'EN',
     storeDomain:
       // @ts-ignore
-      Oxygen?.env?.PUBLIC_STORE_DOMAIN || 'hydrogen-preview.myshopify.com',
+      'non-plus-staff-shop.myshopify.com' || Oxygen?.env?.PUBLIC_STORE_DOMAIN,
     storefrontToken:
       // @ts-ignore
-      Oxygen?.env?.PUBLIC_STOREFRONT_API_TOKEN ||
-      '3b580e70970c4528da70c98e097c2fa0',
+      'a72cba8bc25239f5cbd9ff1582bb9b7e' || Oxygen?.env?.PUBLIC_STOREFRONT_API_TOKEN,
     privateStorefrontToken:
       // @ts-ignore
       Oxygen?.env?.PRIVATE_STOREFRONT_API_TOKEN,
